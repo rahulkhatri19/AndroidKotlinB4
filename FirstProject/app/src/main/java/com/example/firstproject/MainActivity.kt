@@ -24,6 +24,8 @@ class MainActivity : ComponentActivity() {
                         name = "Geeky Students",
                         modifier = Modifier.padding(innerPadding)
                     )
+                    BasicLayout()
+
                 }
             }
         }
@@ -32,10 +34,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+//    Text(
+//        text = "Hello $name!",
+//        modifier = modifier
+//    )
 }
 
 @Preview(showBackground = true)
