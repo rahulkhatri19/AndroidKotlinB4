@@ -20,12 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             FirstProjectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Geeky Students",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                    BasicLayout()
-
+                    BasicLayout(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
@@ -34,10 +29,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-//    Text(
-//        text = "Hello $name!",
-//        modifier = modifier
-//    )
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
 }
 
 @Preview(showBackground = true)

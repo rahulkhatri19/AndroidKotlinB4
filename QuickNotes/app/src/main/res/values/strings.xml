@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">QuickNotes</string>
+    <string name="notes_title">Title</string>
 </resources>

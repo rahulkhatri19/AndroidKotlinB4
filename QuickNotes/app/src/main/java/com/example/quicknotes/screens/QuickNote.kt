@@ -1,4 +1,4 @@
-package com.example.quicknotes
+package com.example.quicknotes.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -27,32 +27,47 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import com.example.quicknotes.model.NotesModel
+import com.example.quicknotes.NotesRoute.DETAIL_NOTES
+import com.example.quicknotes.R
+import com.example.quicknotes.Utility.BACKGROUND
+import com.example.quicknotes.Utility.DESCRIPTION
+import com.example.quicknotes.Utility.TITLE
 import com.example.quicknotes.ui.theme.NoteColoFour
 import com.example.quicknotes.ui.theme.NoteColoOne
 import com.example.quicknotes.ui.theme.NoteColoThree
 import com.example.quicknotes.ui.theme.NoteColoTwo
 
 @Composable
-fun QuickNote(modifier: Modifier) {
+fun QuickNote(navController: NavController) {
 
     val categoryList = arrayListOf("All (20)", "Bookmark", "Important", "Urgent")
     val notesList = arrayListOf<NotesModel>()
 
-    notesList.add(NotesModel(
+    notesList.add(
+        NotesModel(
         "Buy Honey 100% original",
-        "Buy new brand honey for family"))
+        "Buy new brand honey for family")
+    )
 
-    notesList.add(NotesModel(
+    notesList.add(
+        NotesModel(
         "Plan for today",
-        "Good food, Gym, Meeting"))
+        "Good food, Gym, Meeting")
+    )
 
-    notesList.add(NotesModel(
+    notesList.add(
+        NotesModel(
         "Tax payment before the end of march",
-        "This is a reminder note, so as not to forgot to pay taxes before the end of march."))
+        "This is a reminder note, so as not to forgot to pay taxes before the end of march.")
+    )
 
-    notesList.add(NotesModel(
+    notesList.add(
+        NotesModel(
         "Password wifi cafe near me",
-        "Wifi indoor : to the reset the wifi password on time to dont get confusion after every 4 week."))
+        "Wifi indoor : to the reset the wifi password on time to dont get confusion after every 4 week.")
+    )
 
     Box(
         Modifier
@@ -119,7 +134,11 @@ fun QuickNote(modifier: Modifier) {
                             3 -> NoteColoFour
                             else -> NoteColoOne
 
-                        })
+                        }),
+                        onClick = {
+                            println("Quick Note: $index")
+                            navController.navigate("$DETAIL_NOTES?$TITLE=${list.notesTitle}&$DESCRIPTION=${list.notesDescription}&$BACKGROUND=$index")
+                        }
                     ) {
                         Column {
                             Text(
@@ -147,5 +166,5 @@ fun QuickNote(modifier: Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun demoNotes() {
-    QuickNote(Modifier)
+//    QuickNote(Modifier)
 }

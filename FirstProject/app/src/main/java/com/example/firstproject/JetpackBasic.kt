@@ -27,7 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun BasicLayout() {
+fun BasicLayout(modifier: Modifier) {
 
     var count by remember { mutableStateOf(10) }
     Column(
@@ -123,5 +123,5 @@ fun BasicLayout() {
 @Preview(showBackground = true)
 @Composable
 fun demo() {
-    BasicLayout()
+    BasicLayout(modifier = Modifier)
 }

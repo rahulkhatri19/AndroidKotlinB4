@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuickNotesTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    DetailNotes(Modifier.padding(innerPadding))
+                    NotesNavigation(Modifier.padding(innerPadding))
                 }
             }
         }
