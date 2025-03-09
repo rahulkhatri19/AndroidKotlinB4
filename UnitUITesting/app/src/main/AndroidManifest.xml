@@ -13,15 +13,25 @@
         android:theme="@style/Theme.UnitUITesting"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.UnitUITesting">
+            android:name="com.example.unituitesting.uiTesting.NextActivity"
+            android:theme="@style/AppTheme"
+            android:exported="false" />
+        <activity
+            android:name="com.example.unituitesting.uiTesting.EspresoActivity"
+            android:theme="@style/AppTheme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.UnitUITesting">
+
         </activity>
     </application>
 

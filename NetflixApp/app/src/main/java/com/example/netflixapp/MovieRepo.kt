@@ -1,9 +1,11 @@
 package com.example.netflixapp
 
+import com.google.gson.JsonObject
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
+import org.json.JSONObject
 
 class MovieRepo(val retrofitInterface: RetrofitInterface) {
     var onlyOnNetflix = MutableStateFlow<ArrayList<MovieModel>>(arrayListOf())
@@ -40,5 +42,16 @@ class MovieRepo(val retrofitInterface: RetrofitInterface) {
             watchAgain.value = watch
 
         }
+    }
+
+    fun jsonData(json:JSONObject){
+        val jsonArray = json.getJSONArray("moviewList")
+        for (i in 0 .. jsonArray.length()-1){
+            val movieObject = jsonArray.getJSONObject(i)
+            movieObject.getString("name")
+            movieObject.getString("language")
+            movieObject.getJSONObject("")
+        }
+
     }
 }

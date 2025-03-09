@@ -85,6 +85,7 @@ fun FirebaseHome(navController: NavController) {
                     IconButton(
                         onClick = {
                             auth.signOut()
+                            navController.popBackStack()
                         }
                     ) {
                         Icon(
