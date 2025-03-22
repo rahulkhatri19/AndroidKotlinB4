@@ -1,0 +1,95 @@
+{
+  "courseList": [
+    {
+      "courseImage": "https://media.geeksforgeeks.org/img-practice/prod/courses/504/Mobile/Other/Course_DSA_to_Dev_1720846081.webp",
+      "courseTitle": "DSA to Development a Complete Guide",
+      "description": "This course is designed to take you on a transformative journey from mastering Data Structures and Algorithms (DSA) to becoming a proficient developer. Whether you aspire to become a full-stack developer or specialize in a specific technology stack, this course provides the essential building blocks for your coding journey starting right from basic programming to building applications.",
+      "rating": "4.4",
+      "numberOfGeeks": "446k+"
+    },
+    {
+      "courseImage": "https://media.geeksforgeeks.org/img-practice/prod/courses/227/Mobile/Other/Course_Backend_1720846992.webp",
+      "courseTitle": "JAVA Backend Development - Live course",
+      "description":"The JAVA Backend Development - Live course is designed to teach you how to build powerful and efficient backend systems using Java. This extensive Java Backend Development course is a 12-week guided program to equip you with the right skills and make you interview-ready. Not only this, get hands-on experience in building web apps like e-wallets, movie ticket booking, etc.",
+      "rating": "4.7",
+      "numberOfGeeks": "265k+"
+    },
+    {
+      "courseImage": "https://media.geeksforgeeks.org/img-practice/prod/courses/405/Mobile/Other/Course_ML_&_DS_1720846555.webp",
+      "courseTitle": "Complete Machine Learning & Data Science Program",
+      "description":"The Complete Machine Learning & Data Science Program is a comprehensive live course designed to take you from beginner to expert in machine learning and data science. Explore a 360-degree learning experience designed for geeks who wish to get hands-on Data Science and ML. Mentored by industry experts; learn to apply DS methods and techniques, and acquire analytical skills. Join us to gain practical knowledge and become proficient in Data Science.\n\n",
+      "rating": "4.7",
+      "numberOfGeeks": "351K+"
+    },
+    {
+      "courseImage": "https://media.geeksforgeeks.org/img-practice/prod/courses/451/Web/Content/cp_1723008864.webp",
+      "courseTitle": "Master Competitive Programming",
+      "description":"Master Competitive Programming with our comprehensive course covering all CP concepts, Contests, and Intensive problem-solving techniques.",
+      "rating": "4.8",
+      "numberOfGeeks": "248K+"
+    }
+  ],
+  "exploreList": [
+    {
+      "title": "DSA to Development a Complete Guide",
+      "description": "C, C++, Java",
+      "colorList": ["#00c9ff", "#92FE9D"]
+    },
+    {
+      "title": "Backend Development",
+      "description": "PHP, Laravel, Node JS",
+      "colorList": ["#3F2B96", "#A8C0FF"]
+    },
+    {
+      "title": "ML & DS",
+      "description": "Python, ML, Tenser flow",
+      "colorList": ["#fcff9e", "#c67700"]
+    },
+    {
+      "title": "Competitive Programming",
+      "description": "Flutter, Node Js, Swift",
+      "colorList": ["#f7797d", "#FBD786", "#f7797d"]
+    },
+    {
+      "title": "DSA to Development a Complete Guide",
+      "description": "C, C++, Java",
+      "colorList": ["#00c9ff", "#92FE9D"]
+    },
+    {
+      "title": "Backend Development",
+      "description": "PHP, Laravel, Node JS",
+      "colorList": ["#3F2B96", "#A8C0FF"]
+    },
+    {
+      "title": "ML & DS",
+      "description": "Python, ML, Tenser flow",
+      "colorList": ["#fcff9e", "#c67700"]
+    },
+    {
+      "title": "Competitive Programming",
+      "description": "Flutter, Node Js, Swift",
+      "colorList": ["#f7797d", "#FBD786", "#f7797d"]
+    }
+  ],
+  "myCoursesList": [
+    {
+      "courseImage": "https://media.geeksforgeeks.org/img-practice/prod/courses/483/Mobile/Other/Course_Devops_1720845934.webp",
+      "courseTitle": "DevOps Engineering - Planning to Production",
+      "isPaid": true
+    },
+    {
+      "courseImage": "https://media.geeksforgeeks.org/img-practice/prod/courses/241/Web/Content/FSRNL_1705410152.webp",
+      "courseTitle": "Full Stack Development with React & Node JS",
+      "isPaid": true
+    }
+  ],
+  "profileData": {
+    "userImage": "https://randomuser.me/api/portraits/med/men/75.jpg",
+    "userName": "Rahul Khatri",
+    "userHandle": "@rahulkhatri",
+    "userCollege": "Maharishi Arvind College of Engineering and Technology (MACET)",
+    "followers": "12",
+    "following": "15",
+    "articles": "5"
+  }
+}
