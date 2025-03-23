@@ -30,6 +30,8 @@ import androidx.navigation.NavController
 import coil3.compose.AsyncImage
 import coil3.request.ImageRequest
 import coil3.request.crossfade
+import com.geeksforgeek.elearningapp.Utility.paymentMethod
+import com.geeksforgeek.elearningapp.bottomNav.CourseRoute.DETAIL_SCREEN
 
 @Composable
 fun HomeScreen(navController: NavController) {
@@ -45,7 +47,7 @@ fun HomeScreen(navController: NavController) {
                     modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 16.dp),
                     elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
                     onClick = {
-                     //   navController.navigate(DETAIL_SCREEN)
+                        navController.navigate(DETAIL_SCREEN)
                     }
                 ) {
                     Column {
@@ -96,7 +98,7 @@ fun HomeScreen(navController: NavController) {
 
                         Button(
                             onClick = {
-                               // paymentIntent(context, "")
+                                paymentMethod(context)
                             },
                             Modifier
                                 .fillMaxWidth()
@@ -110,8 +112,6 @@ fun HomeScreen(navController: NavController) {
                         ) {
                             Text("Enroll Now", color = Color.Green)
                         }
-
-
                     }
                 }
             }
